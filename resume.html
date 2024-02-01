@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+<html>
+    <head>
+        <title> {% block title %} Resume {% endblock title %} </title>
+    </head>
+
+    {% block body %}
+    <body>
+        <div class="row"><center>
+            <div class="col-md-6 my-2">
+                <div class="container-fluid card card-body h-100">
+                    <h4>Resume</h4>
+                    <hr>
+                    <img src="/static/resume_photo.png" alt="Your Image Alt Text" class="img-fluid mb-3">
+                </div>
+            </div></center>
+    </body>
+    {% endblock body %}
+
+</html>

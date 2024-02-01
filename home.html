@@ -1,0 +1,393 @@
+{% extends 'base.html' %}
+<html>
+    <head>
+        <title> {% block title %} Home {% endblock title %} </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!--For container rows-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+
+    {% block body %}
+      
+        <style>  
+            body{
+            background-color:#F8F8F8!important;
+            }
+
+            #profile-wrapper{
+                text-align: center;
+            }
+
+            #profile-pic{
+                width:135px;
+                height: 145px;
+                border-radius: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            ul{
+                padding: 0;
+                list-style-type: none;
+            }
+            
+            .social-icons {
+                display: flex;
+                justify-content: flex-start; /* Align icons to the left */
+                margin: 0; /* Remove default margin */
+                padding: 0; /* Remove default padding */
+            }
+    
+            .social-icons a {
+                margin-right: 10px; /* Adjust spacing between icons */
+                color: #007bff; /* Set the icon color */
+            }
+    
+            .social-icons i {
+                font-size: 24px; /* Adjust the size of the icons */
+            }
+        </style>
+
+
+        <!--Photo-->
+        <div class="container-fluid my-4 mx-0">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card card-body h-100" style="border: 2px solid black;" id="profile-wrapper">
+                        <img id="profile-pic" src="/static/ebaad_image.jpg" alt = "Ebaad Azam" width=180 height=200>
+                        <hr>
+                        <h4>Hi I'm Ebaad!</h4>
+                        <p>I love Coding, and being embarked on a journey exploring the Software Developer world</p>
+                    </div>
+                </div>
+
+
+                <!--About Me-->
+                <div class="col-md-9">
+                    <div class="card card-body h-100" style="border: 2px solid black;">
+                        <h4>My Journey</h4>
+                        <hr>
+                        <p>As a passionate and dedicated aspiring Software Engineer/Developer, I've been actively building
+                           my skills in the world of software engineering. Three months after writing my first "Hello World"
+                           Program on 5th April 2018, my journey began with a solid foundation in Python, where I delved 
+                           into the world of Django, Object-Oriented Programming (OOP), and mastering Data Structures and 
+                           Algorithms (DSA) in Python.</p>
+    
+                        <p>Having honed my skills through various platforms such as LeetCode, GeeksforGeeks, and HackerRank,
+                           I tackled complex problem-solving scenarios, enhancing my ability to approach challenges with a 
+                           logical and algorithmic mindset.</p>
+                        
+                        <p>I have acquired proficiency in Core Java, Spring, and Micro-Services, with the goal of advancing 
+                           my capabilities as a software engineer and broadening my skill set. This endeavor has not only 
+                           made me a more versatile professional but has also opened up new opportunities for career growth 
+                           and development.</p>
+                        
+                        <p>My proficiency extends to MySQL, HTML, C++, and C, further enriching my toolkit for software 
+                            development. Throughout my academic journey, I've not only excelled in theoretical concepts but 
+                            also applied my knowledge to real-world scenarios.</p>
+                        
+                        <p>Now, equipped with a robust skill set and a passion for building innovative solutions, I am 
+                            actively seeking opportunities to contribute my skills and enthusiasm as a software engineer. 
+                            I am eager to apply my knowledge in a professional setting, collaborate with experienced developers,
+                            and make a meaningful impact in the world of technology.</p>
+                        
+                        <p>From this you’ll see that I’m someone that jumps before I can talk myself out of doing something
+                           scary.</p>     
+                    </div>
+                </div>
+            </div><br>
+
+            
+            <!--Technical Skills-->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card card-body h-100" style="border: 2px solid black;">
+                        <h4>Technical Skills</h4>
+                        <hr>
+                        <p>                           
+                            <b>1. Python Programming:</b><br>
+                               Proficient in Python programming language, with a strong grasp of core language features and
+                                syntax.
+                               My proficiency in Object-Oriented Programming (OOP) and Data Structures and Algorithms (DSA)
+                                in Python allows me to approach problem-solving with a systematic and logical mindset.<br>
+                            
+                            <b>2. Django Framework:</b><br>
+                               Expertise in Django web framework, demonstrated by the development of scalable and secure 
+                               web applications.
+                               Familiarity with Django ORM for efficient database management.<br>
+                            
+                            <b>3. MySQL:</b><br>
+                               Skilled in designing and optimizing relational databases using MySQL.
+                               Proficient in writing complex SQL queries for data retrieval and manipulation.<br>
+                            
+                            <b>4. Java:</b><br>
+                               Solid understanding of Java programming language and object-oriented principles.
+                               Experience in Java application development, focusing on both desktop and web-based solutions.<br>
+                            
+                            <b>5. Data Analysis:</b><br>
+                               Proficient in data analysis techniques, including cleaning, visualization, and interpretation.
+                               Applied data analysis skills to derive meaningful insights and support decision-making processes.<br>
+                            
+                            <b>6. Data Interpretation:</b><br>
+                               Strong ability to interpret data patterns and trends to derive actionable conclusions.
+                               Skilled in translating complex data sets into comprehensible insights for diverse audiences.<br>
+                            
+                            <b>7. C and C++:</b><br>
+                               Familiarity with C and C++ programming languages.
+                               Applied knowledge in algorithm design, system programming, and low-level programming tasks.<br><br>
+                            
+                            <h5>Tools and Environments:</h5>
+                            <ul>
+                            <li><b> IDEs: </b> Proficient in using Integrated Development Environments (IDEs) such as PyCharm, Jupiter Notebook, Eclipse 
+                               and Visual Studio Code for effective coding and debugging.</li></ul>
+                            
+                            <h5>Soft Skills:</h5>
+                            <ul>
+                            <li><b> Problem-Solving: </b>
+                                Strong analytical and problem-solving skills, demonstrated through the successful resolution of complex 
+                                coding challenges.<br></li>
+                            
+                            <li><b> Fluent English Communication: </b>
+                                Effective written and verbal communication skills, facilitating clear articulation of technical concepts to 
+                                diverse audiences.<br></li>
+                            
+                            <li><b> Continuous Learning: </b>
+                                Demonstrated commitment to continuous learning and staying updated with industry trends and emerging
+                                 technologies.<br></li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                
+                <!--Projects-->
+                <div class="col-md-6">
+                    <div class="card card-body h-100" style="border: 2px solid black;">
+                        <h4>Projects</h4>
+                        <hr>
+
+                        <h5>Virtual Car Workshop</h5>
+                        <ul>
+                            <li> Established an Online Car Workshop Website, an online hub for all car enthusiasts which
+                                is heavily indulged in offering the cars services such as Modifying, Detailing, Washing and 
+                                Repairing. You can think of it as the car Workshop that is not physically present at the
+                                moment but has its online presence in order to make people aware about it. </li>
+                            <li>Modifying the Car involves customizing the ride according to the tastes and preferences of
+                                the people</li>
+                            <li>Car detailing is an extensive cleaning and restoration process that goes beyond a regular
+                                car wash. It's about bringing out the best in your vehicle by addressing every nook and 
+                                cranny, both in terms of aesthetics and functionality.</li>
+                            <li>Car repairing involves identifying and fixing issues or malfunctions in a vehicle's 
+                                mechanical, electrical, or electronic systems to ensure it operates efficiently and safely</li>
+                            <li>Car washing involves the cleaning and maintenance of a vehicle's exterior and sometimes
+                                interior surfaces to keep it looking clean, presentable, and protected. </li>
+                            <b>Technologies Used -</b><p>Python Programming, Django Framework, SQL, HTML5, CSS, JavaScript</p>
+                        </ul>
+
+                        <h5>Personal Portfolio Website</h5>
+                        <ul>
+                            <li>Designed and developed my personal portfolio website to serve as a dynamic showcase of 
+                                my skills, projects, about myself from the beginning of my professional journey till now.</li>
+                            <b>Technologies Used -</b><p>Python Programming, Django Framework, SQL, HTML5, CSS, JavaScript</p>
+                        </ul>
+
+                        <h5>BookMyShow Project</h5>
+                        <ul>
+                            <li>Developed a robust backend system for an online ticket booking platform inspired by 
+                                BookMyShow. This project not only honed my programming skills but also demonstrated my 
+                                ability to create scalable and organized solutions. In the project, Implemented a modular
+                                and maintainable codebase using OOP principles, ensuring code scalability and ease of 
+                                future enhancements.</li>
+                                <b>Technologies Used -</b><p>Python Programming, Object-Oriented-Progrmmaing in Python</p>
+                        </ul>
+
+                        <h5>Car Price Predictor</h5>
+                        <ul>
+                            <li>Developed a Machine Learning car Price Predictor Model that predicts the price of a car
+                                based on various features such as Brand and Model, Year Of Purchase, Fuel Type like Petrol
+                                or Diesel, Kms-Driven etc.</li>
+                            <b>Technologies Used -</b><p>Python Programming, NumPy, Pandas, Scikit-learn, Flask, MatplotLib, TensorFlow</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+
+            <!--Achievements-->
+            <div class="row">
+            <div class="col-md-6 my-2">
+                <div class="card card-body h-100" style="border: 2px solid black;">
+                    <h4>Achievements</h4>
+                    <hr>
+                    <ul style="list-style-type: disc; padding-left: 20px;">
+                        <li>Achieved 5 Stars Badge for Python And MySQL at HackerRank</li>
+                        <li>Achieved the Best Intern Award During my Python Internship</li>
+                        <li>Solved 100+ Coding Problem Solving Questions on various platforms such as Leetcode, HackerRank
+                            and GeeksforGeeks</li>
+                        <li>Earned Python Programming Skill Certificate from HackerRank</li>
+                        <li>Earned MySQL Language Skill Certificate from HackerRank</li>
+                        <li>Certificate for Python Machine Learning from Google Developers and Microsoft</li>
+                        <li>Certificate of being a Semi-Finalist in Vocabaddicts 3.0, an english vocaabulary competition
+                            organized by TMU CTLD Department</li>
+                            <li>Certificate for the Completion of C Training organised by IIT Bombay</li>
+                            <li>Certificate of Completion of Career Essentials in Generative AI By Microsoft and LinkedIn</li>
+                    </ul>
+                </div>
+            </div>
+            
+
+            <!--My Short Term Goals-->
+            <div class="col-md-6">
+                <div class="card card-body h-100" style="border: 2px solid black;">
+                    <h4>My Short Term Goals</h4>
+                <hr>
+                <p>As a passionate learner and aspiring software engineer, my short-term goals revolve around 
+                    continuous growth and contribution to the tech community. Here's what I'm currently focused on:</p>
+
+                <p>1. <strong>Exploring New Technologies:</strong> After nearly two years of learning various Programming
+                    languages, I'm eager to broaden my skill set and focus on a particular technology. I plan to delve into
+                     new technologies, including Core Java, Spring, Micro-Services, MongoDB, and Machine Learning.</p>
+
+                <p>2. <strong>Knowledge Sharing:</strong> I'm committed to sharing my experiences and insights with the
+                     community. You can find me actively collaborating on my LinkedIn (<a href="https://www.linkedin.com/in/ebaadazam90"
+                     target="_blank">Click Here to land on my LinkedIn profile</a>) and YouTube channel, where I'll be discussing coding
+                     challenges, project development, and industry insights.</p>
+
+                <p>3. <strong>Joining a Collaborative Team:</strong> I aim to transition into a position where I can 
+                    contribute to a dynamic team environment. Learning from experienced professionals and being part 
+                    of a collaborative team is crucial for my growth as a software engineer.</p>
+
+                </div>
+            </div>
+        </div>
+                
+    
+                
+    {% comment %} <div class="row">
+        <div class="col-md-6 my-2">
+            <div class="card card-body h-100" style="border: 2px solid black;">
+                <h4>Resume</h4>
+                <hr>
+                <img src="/static/resume_photo.png" alt="Your Image Alt Text" class="img-fluid mb-3">
+            </div>
+        </div> {% endcomment %}
+
+    </div>
+
+  </div>
+ </div><br>
+</div>
+
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/ebaadazam90/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com/Ebaad0009" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+        </div>
+
+
+<!--The very last portion of the Home Page-->
+<style>
+    footer {
+        color: black; 
+        padding: 20px;
+    }
+</style>
+  
+  <footer class="pt-4 my-md-10 pt-md-5 border-top">
+    <div class="row">
+      <div class="col-12 col-md">
+        <img class="mb-2" src="https://tse2.mm.bing.net/th?id=OIP.0UaJW-KXB_3A6EnIkJ-kLQHaHX&pid=Api&P=0&h=180" alt="" width="30" height="22">
+        <small class="d-block mb-3 text-body-secondary">&copy; @2023</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5 style="margin-left:40px color: black;">Features</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5 style="margin-left:-2px">Resources</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5 style="margin-left:-3px">About</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">About Me</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Location</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Accounts</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <style>
+        /* Add this style for the line above copyright */
+        .footer-top {
+            border-top: 1px solid black;
+            padding-top: 10px; /* Adjust the padding for spacing */
+            margin-top: 20px; /* Adjust the margin for spacing */
+        }
+    
+        .coppyright {
+            color: black;
+            text-align: center;
+            padding-top: 15px; /* Add a bit more padding to create a gap */
+            font-size: small;
+        }
+    </style>
+    
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4"></div>
+                <div class="col-sm-4 col-xs-12 coppyright" style="color: black;"> Copyright 2023, Ebaad Azam. All Rights Reserved. Designed and Promoted by <a href="https://instagram.com/ebaad09">Ebaad Azam</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+
+        <!--Alert for the submit button-->
+      {% if messages %}
+      {% for message in messages %}
+      <div class="alert alert-{{message.tags}} alert-dismissible fade show my-0" role="alert">
+        <strong>{{message}}</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      {% endfor %}
+      {% endif %}
+  
+  
+  <!--Icons-->
+  <div style="display: flex; gap: 5px; margin: 10px; align-items: center;">
+    <a href="https://www.instagram.com/ebaad09" target="_blank" style="text-decoration: none; transition: transform 0.3s ease-in-out;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 25px; height: 25px;">
+    </a>
+    <a href="https://www.facebook.com/ebaad.azam.5/" target="_blank" style="text-decoration: none; transition: transform 0.3s ease-in-out;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Facebook_logo_36x36.svg/1200px-Facebook_logo_36x36.svg.png" alt="Facebook" style="width: 23px; height: 23px;">
+    </a>
+    <a href="https://www.linkedin.com/in/ebaadazam90" target="_blank" style="text-decoration: none; transition: transform 0.3s ease-in-out;">
+      <img src="https://itcnet.gr/wp-content/uploads/2020/09/Linkedin-logo-on-transparent-Background-PNG--800x800.png" alt="LinkedIn" style="width: 30px; height: 30px;">
+    </a>
+    <a href="https://twitter.com/Ebaad0009" target="_blank" style="text-decoration: none; transition: transform 0.3s ease-in-out;">
+      <img src="https://www.freeiconspng.com/uploads/-van-nederland-elgie-gaat-haar-ontwikkeling-posten-op-twitter-24.png" alt="Twitter" style="width: 28px; height: 26px;">
+    </a>
+  </div>
+  
+  
+  {% endblock body %}
+
+
+</html>
+
